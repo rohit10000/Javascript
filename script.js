@@ -1,31 +1,21 @@
+//function
 
-var x = 5;
-var y = 6;
-var z = "6";
-//alert(x + y);
-alert(y === z);
+//jquery is the framework for many useful function in javascript
+var a = 5;//global var    :: Point (1)
 
-//conjuction &&(AND operator)
-//disjunction ||(OR operator)
+//see after removing 'a' as parameter.
+function test(a){//a is local variable here
 
-var x =2;
-var isEven = true;
-var isEven = (x%2 === 0) ? true: false;
-
-alert(isEven);
-
-//Switch(toggle)
-
-var a =1;
-switch (a) {
-    case 1:
-        alert("Monday");
-        break;
-    case 2:
-        alert("Tuesday");
-        break;
-    default:
-        alert("something else");
-
+    a = 3;      // ::Point (2)
+    alert(a);
 }
+
+test();
+
+alert("a: " + a);
+
+//Suppose, we have not declared the global variable and also we have not
+// passed the variable as a parameter to the test function, then the varible
+//will be treated as a global variable at point (2).
+
 
