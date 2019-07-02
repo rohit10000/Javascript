@@ -1,4 +1,9 @@
 
 var x = 5;
 var y = 6;
-alert(x + y);
+var z = "6";
+//alert(x + y);
+alert(y === z);
+
+//conjuction &&(AND operator)
+//disjunction ||(OR operator)
